@@ -1,0 +1,30 @@
+import RedBlackTree from "../06_二叉搜索树Tree/04_红黑树";
+
+const rbt = new RedBlackTree<number>()
+
+console.log('-----------------------insert-------------------')
+for (let i = 1; i <= 18; i++) {
+  rbt.insert(i)
+}
+// rbt.insert(19)
+// rbt.insert(20)
+rbt.print()
+console.log(rbt.root?.value)
+// console.log(rbt.minimum()?.value)
+console.log('-----------------------delete-------------------')
+rbt.delete(18)
+rbt.delete(17)
+rbt.delete(16)
+rbt.delete(15)
+rbt.delete(14)
+rbt.print()
+rbt.delete(8)
+rbt.print()
+rbt.delete(12)
+rbt.print()
+rbt.delete(13)
+rbt.print()
+rbt.delete(4)
+rbt.print()
+console.log(rbt.delete(9)?.value)
+rbt.print()
